@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="text-center p-5 shadow-lg rounded bg-white" style="max-width: 480px;">
+        <h1 class="display-4 text-dark mb-3">¡Bienvenido a la Interfaz de Chat!</h1>
+        <p class="lead text-muted mb-4">Explora la interfaz usando el botón a continuación.</p>
+
+        <div class="d-flex justify-content-center">
+            <div class="progress-circle bg-info text-white d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px; border-radius: 50%; font-size: 1.5rem;">
+                <i class="bi bi-chat-dots-fill"></i>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a class="btn btn-primary btn-lg w-100 py-3" asp-area="" asp-controller="Chat" asp-action="Index">
+                <strong>Ir a la Interfaz de Chat</strong>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .progress-circle {
+        background: #17a2b8; /* Color más suave */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
